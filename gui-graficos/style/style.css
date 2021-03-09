@@ -1,0 +1,144 @@
+@font-face {
+  font-family: Keep Calm;
+  src: url("fonts/KeepCalm-Medium.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: url(../imgs/TelaGraficos.png);
+  background-size: cover; 
+  overflow: hidden;
+}
+
+#app {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#content {
+    background: #fff;
+    width: 1150px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    display: flex;
+    text-align: center;
+    height: 80%;
+    border: 1.5px solid #29AA79;
+    border-radius: 20px; 
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;  
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+} 
+
+.titulo {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: -20px;
+}
+
+.titulo h1{ 
+  display: inline;
+  background: #FFFFFF;
+  border: 1.5px solid #29AA79;
+  padding: 9px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: Keep Calm; 
+}
+
+.componentes h5 {
+    padding: 10px;
+}
+
+input[type="date"] {
+    margin: 6px;
+    outline: none;
+    border-radius: 7px;
+    border: 0;
+    width: 90%;
+    padding: 5px;
+}
+
+.quadrado {
+    width: 190px;
+    margin: 0 auto 20px;
+    height: 190px;
+    background: white;
+    border-radius: 10px;
+}
+
+ul.componentes li {
+  display: inline-flex;
+  background: #25946a;
+  width: 220px;
+  margin: 0 32px;
+  border-radius: 20px;
+  color: white;
+  padding: 10px;
+  font-family: arial;
+  font-weight: 700;
+}
+
+button.botao-login {
+    background: #25946a;
+    border: 1px solid white;
+    color: white;
+    padding: 9px 21px;
+    outline: none;
+    margin: 9px;
+    border-radius: 15px;
+}
+
+button.botao-login:hover {
+    background: #ffffff17;
+}
+
+.grafico1, .grafico2, .grafico3 {
+  margin: 0 auto;
+}
+
+.botoes1, .botoes2 {
+position: absolute;
+width: 50px;
+height: 50px;
+background: white;
+border-radius: 100%;
+border: 1px solid #29AA79;
+transition: all ease .5s;
+}
+
+.botoes1:hover, .botoes2:hover{
+  background: #25946a;
+  color: white;
+}
+
+.botoes1{
+  left: -25px;
+  line-height: 50px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.botoes2{
+  right: -25px;
+  line-height: 50px;
+  font-size: 30px;
+  cursor: pointer;
+}
